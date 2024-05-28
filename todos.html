@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="{{ url_for('static', filename='js/scripts.js') }}" defer></script>
+    <title>Your To-Do List</title>
+</head>
+<body>
+    <h1>Your To-Do List</h1>
+    <form id="new-todo-form">
+        <input type="text" id="new-todo" placeholder="New To-Do" required>
+        <button type="submit">Add</button>
+    </form>
+    <ul id="todo-list">
+        <!-- To-Do items will be displayed here -->
+    </ul>
+    <a href="/logout">Logout</a>
+</body>
+</html>
